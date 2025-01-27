@@ -1,0 +1,43 @@
+@import url(about.css);
+@import url(contact.css);
+@import url(footer.css);
+@import url(header.css);
+@import url(nav.css);
+@import url(projects.css);
+@import url(publications.css);
+@import url(team.css);
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(img/robotic.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    color: white;
+    min-height: 100vh;
+}
+
+.section {
+    padding: 20px;
+    text-align: center;
+    background-color: rgba(11, 14, 17, 0.321);
+    margin: 20px auto;
+    border-radius: 10px;
+    max-width: 90%;
+    width: 100%;
+}
+
+/* Home Icon Style */
+.icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    vertical-align: middle;
+}

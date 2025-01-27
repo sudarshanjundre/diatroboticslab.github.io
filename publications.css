@@ -1,0 +1,113 @@
+
+.publications-section {
+  padding: 20px;
+  text-align: center;
+  background-color: rgba(11, 14, 17, 0.321);
+  margin: 20px auto;
+  border-radius: 10px;
+  max-width: 90%;
+  width: 100%;
+  }
+  
+  .publications-section h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+  
+  /* Grid Layout */
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1.5rem;
+  }
+  
+  @media (min-width: 768px) {
+    .grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  /* Publication Card */
+  .publication-card {
+    padding: 1rem;
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 1rem;
+  }
+  
+  .publication-card h3 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+  
+  .publication-card p {
+    font-size: 0.875rem;
+    color: #4b5563;
+    margin: 0.25rem 0;
+  }
+  
+  /* View More Button */
+  .mt-6 {
+    margin-top: 1.5rem;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  a {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: #2563eb;
+    color: #ffffff;
+    font-size: 0.875rem;
+    font-weight: 500;
+    text-align: center;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  a:hover {
+    background-color: #1e40af;
+  }
+  
+.publication-link {
+  display: inline-block;
+  padding: 8px 16px;
+  font-size: 1em;
+  color: black;
+  background-color:transparent;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.publication-link:hover {
+  background-color:rgb(238, 233, 233);
+  color: black;
+  text-decoration: none;
+}
+.text-lg{
+  color: black;
+}
+.px-6{
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: #007BFF;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}

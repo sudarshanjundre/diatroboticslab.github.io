@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Robotics Lab</title>
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="footer.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>/* General Reset */
+        /* Body Styling */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            background-image: url('img/robot-background-img-1.jpg');
+      background-size: cover; 
+      background-position: center; 
+      background-repeat: no-repeat;
+            
+        }
+        /* Contact Section */
+        #contact {
+            background-color: #70707028;
+            padding: 60px 0;
+        }
+        
+        .contact-section .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        h1 {
+            font-size: 36px;
+            font-weight: 600;
+            text-align: center;
+            margin-bottom: 20px;
+            color: #eeecec;
+        }
+        
+        p {
+            font-size: 1.1em;
+            text-align: center;
+            margin-bottom: 40px;
+            color: #f5f1f1;
+        }
+        
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: transparent;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        label {
+            display: block;
+            font-size: 1.1em;
+            color: #fdfbfb;
+            margin-bottom: 5px;
+        }
+        
+        input, textarea {
+            width: 100%;
+            padding: 12px;
+            font-size: 1em;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            margin-top: 5px;
+        }
+        
+        textarea {
+            resize: vertical;
+        }
+        
+        .submit-button {
+            background-color: #25abf9;
+            color: white;
+            font-weight: 600;
+            border: none;
+            padding: 12px 1px;
+            cursor: pointer;
+            font-size: 1.1em;
+            border-radius: 6px;
+            width: 100%;
+            transition: background-color 0.3s;
+        }
+        
+        .submit-button:hover {
+            background-color: #e6891f;
+        }
+        
+        /* Contact Info */
+        .contact-info {
+            text-align: center;
+            margin-top: 50px;
+        }
+        
+        .contact-info h2 {
+            font-size: 28px;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        
+        .contact-info p {
+            font-size: 1.2em;
+            color: #555;
+            margin-bottom: 30px;
+        }
+        
+        /* Google Map */
+        .map-container {
+            position: relative;
+            width: 100%;
+            height: 400px;
+            margin-top: 20px;
+        }
+        
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        </style>
+</head>
+<body>
+
+    <header>
+        <nav id="nav-links" class="hidden" style="position:fixed; top: 0;left: 0; right: 0; z-index: 100;">
+            <div class="nav-home">
+                <a href="index.html">
+                    <i class="fa fa-home" aria-hidden="true"></i>
+    
+                </a>
+            </div>
+            <div class="nav-links-group">
+                <a href="projects.html">Projects</a>
+                <a href="publication1.html">Publications</a>
+                <a href="index.html">Team</a>
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <p>Have questions or want to get in touch? We'd love to hear from you!</p>
+
+            <div class="contact-form">
+                <form action="#" method="POST">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-button">Send Message</button>
+                </form>
+            </div>
+
+            <div class="contact-info">
+                <h1>Our Location</h1>
+                <p>Address in short</p>
+
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.903235191393!2d90.41184101429989!3d23.810276593229205!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8375f5f5d3d%3A0x103458b5c702d244!2sDhaka%2C%20Bangladesh!5e0!3m2!1sen!2sus!4v1605358963210!5m2!1sen!2sus" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div  class="container">
+            <p>&copy; 2025 Robotics Lab. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

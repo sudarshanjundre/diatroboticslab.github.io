@@ -1,0 +1,64 @@
+/* Container for horizontal scroll */
+.team-container {
+    display: flex;
+    overflow-x: auto; /* Enables horizontal scrolling */
+    padding: 20px 0;
+    gap: 40px; /* Space between items */
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    scrollbar-width: none; /* Replaced 'none' with 'thin' to enable scrollbar visibility */
+    -ms-overflow-style: none; /* Hides scrollbar in IE/Edge */
+}
+
+/* Individual Item (Photo, Name, Subtitle) */
+.team-member {
+    background-color: #fff;
+    border-radius: 10px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    scroll-snap-align: start; /* Ensures items snap into place */
+    flex-shrink: 0; /* Prevents shrinking */
+    transition: transform 0.3s ease-in-out;
+}
+
+.team-member img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin-bottom: 15px;
+}
+
+.team-member h3 {
+    font-size: 1.5em;
+    color: #333;
+}
+
+.team-member p {
+    font-size: 1.1em;
+    color: #777;
+}
+
+/* Hover effect for item */
+.team-member:hover {
+    transform: translateY(-10px); /* Apply transform on hover of individual item */
+}
+
+/* Optional: Custom scrollbar */
+.team-container::-webkit-scrollbar {
+    height: 8px;
+}
+
+.team-container::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+
+.team-container::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.team-section{
+    background-color: transparent;
+}

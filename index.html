@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab Website</title>
+    <link rel="stylesheet" href="global.css">
+    <!-- <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="publications.css">
+    <link rel="stylesheet" href="projects.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="team.css">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="footer.css"> -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header style="width:100%;">
+        <img src="img/diat-logo.png" alt="Institute's Logo">
+        <div>
+            <h1>Welcome to Our Robotics Lab</h1>
+            <p>Innovating Autonomous Systems for the Future</p>
+        </div>
+    </header>
+    
+    <nav id="nav-links" class="hidden" style="position: sticky; top: 0; z-index: 100;">
+        <div class="nav-home">
+            <a href="index.html">
+                <i class="fa fa-home" aria-hidden="true"></i>
+
+            </a>
+        </div>
+        <div class="nav-links-group">
+            <a href="projects.html">Projects</a>
+            <a href="publication1.html">Publications</a>
+            <a href="#team">Team</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+ 
+  
+  <div class="w3-content w3-display-container" style="position: relative; width: 70%;
+  max-width: 900px;
+  margin: 0 auto; margin-top: 20px;  scroll-behavior: smooth;">
+  
+  <div class="w3-display-container mySlides">
+    <img src="img/360_F_1183241641_hhwkRI5uDnpgUrnJDn9oqnSrZaBvpFEf.jpg" style="width:100%">
+    <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+      Name
+    </div>
+  </div>
+  
+  <div class="w3-display-container mySlides">
+    <img src="img/robot-background-img-3.jpg" style="width:100%">
+    <div class="w3-display-bottomright w3-large w3-container w3-padding-16 w3-black">
+      Name
+    </div>
+  </div>
+  
+  <div class="w3-display-container mySlides">
+    <img src="img/robotic.jpg" style="width:100%">
+    <div class="w3-display-topleft w3-large w3-container w3-padding-16 w3-black">
+      Name
+    </div>
+  </div>
+  </div>
+  
+  <button style=" position: absolute;
+  top: 60%;
+  left: 10px;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 24px;
+" class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
+  <button style=" position: absolute;
+  top: 60%;
+  right:10px;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 24px;
+" class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
+  
+  </div>
+  
+  <script>
+  var slideIndex = 1;
+  showDivs(slideIndex);
+  
+  function plusDivs(n) {
+    showDivs(slideIndex += n);
+  }
+  
+  function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    if (n > x.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = x.length}
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    x[slideIndex-1].style.display = "block";  
+  }
+  </script>
+        
+  <div class="project-section">
+    <h2 class="section-title" style="text-align: center;">Projects</h2>
+    <div class="project-grid">
+      <div class="project-card" onclick="window.location.href='project1.html'">
+        <div class="project-image" style="background-image: url('https://via.placeholder.com/300');"></div>
+        <div class="project-content">
+          <h3 class="project-title">Project Alpha</h3>
+          <p class="project-description">A modern web application for task management.</p>
+        </div>
+      </div>
+
+      <div class="project-card" onclick="window.location.href='project1.html'">
+        <div class="project-image" style="background-image: url('https://via.placeholder.com/300');"></div>
+        <div class="project-content">
+          <h3 class="project-title">Project Beta</h3>
+          <p class="project-description">An e-commerce platform with payment integration.</p>
+        </div>
+      </div>
+      
+      <div class="project-card" onclick="window.location.href='project1.html'">
+        <div class="project-image" style="background-image: url('https://via.placeholder.com/300');"></div>
+        <div class="project-content">
+          <h3 class="project-title">Project Beta</h3>
+          <p class="project-description">An e-commerce platform with payment integration.</p>
+        </div>
+      </div>
+
+      <div class="project-card" onclick="window.location.href='project1.html'">
+        <div class="project-image" style="background-image: url('https://via.placeholder.com/300');"></div>
+        <div class="project-content">
+          <h3 class="project-title">Project Gamma</h3>
+          <p class="project-description">A mobile app for fitness tracking and analytics.</p>
+        </div>
+      </div>
+    </div>
+    <div class="more-projects">
+        <a href="projects.html" class="more-projects-button">Explore Projects</a>
+      </div>
+  </div>
+      <div class="publications-section p-6 bg-gray-100 rounded-2xl">
+        <h2 class="text-2xl font-bold mb-4" style="text-align: center; color: black;">Publications</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- Example Publication Cards -->
+          <div class="publication-card p-4 bg-white shadow-md rounded-xl">
+            <h3 class="text-lg font-semibold mb-2" style="color: black;">Title of Publication 1</h3>
+            <p class="text-sm text-gray-600">Author: Dr. Jane Doe</p>
+            <p class="text-sm text-gray-600">Published: January 2025</p>
+            <a href="https://www.journalofairesearch.com/ai-in-healthcare" class="publication-link" target="_blank">Read Full Paper</a>
+          </div>
+          <div class="publication-card p-4 bg-white shadow-md rounded-xl">
+            <h3 class="text-lg font-semibold mb-2">Title of Publication 2</h3>
+            <p class="text-sm text-gray-600">Author: John Smith</p>
+            <p class="text-sm text-gray-600">Published: December 2024</p>
+            <a href="https://www.journalofairesearch.com/ai-in-healthcare" class="publication-link" target="_blank">Read Full Paper</a>
+          </div>
+          <div class="publication-card p-4 bg-white shadow-md rounded-xl">
+            <h3 class="text-lg font-semibold mb-2">Title of Publication 3</h3>
+            <p class="text-sm text-gray-600">Author: Intern A</p>
+            <p class="text-sm text-gray-600">Published: November 2024</p>
+            <a href="https://www.journalofairesearch.com/ai-in-healthcare" class="publication-link" target="_blank">Read Full Paper</a>
+          </div>
+          <!-- Add more publication cards here -->
+        </div>
+      
+        <div class="mt-6 text-center">
+          <a 
+            href="publication1.html" 
+            class="inline-block px-6 py-3 bg-blue-600 text-white font-medium text-sm rounded-lg hover:bg-blue-700 transition duration-300"
+          >
+            More Publication
+          </a>
+        </div>
+      </div>
+
+    <section id="team" class="section team1 team-section">
+        <h2>Our Team</h2>
+        <div class="team-container">
+          <!-- Scroll Item 1 -->
+          <div class="team-member">
+              <img src="img/360_F_1183241641_hhwkRI5uDnpgUrnJDn9oqnSrZaBvpFEf.jpg" alt="Person 1">
+              <h3>John Doe</h3>
+              <p>CEO & Founder</p>
+          </div>
+          <div class="team-member">
+              <img src="img/drdo-holds-interaction-with-defence-startups.webp" alt="Person 1">
+              <h3>John Doe</h3>
+              <p>CEO & Founder</p>
+          </div>
+          <div class="team-member">
+              <img src="https://via.placeholder.com/150" alt="Person 1">
+              <h3>John Doe</h3>
+              <p>CEO & Founder</p>
+          </div>
+          <div class="team-member">
+              <img src="https://via.placeholder.com/150" alt="Person 1">
+              <h3>John Doe</h3>
+              <p>CEO & Founder</p>
+          </div>
+          <div class="team-member">
+              <img src="https://via.placeholder.com/150" alt="Person 1">
+              <h3>John Doe</h3>
+              <p>CEO & Founder</p>
+          </div>
+          <div class="team-member">
+              <img src="https://via.placeholder.com/150" alt="Person 1">
+              <h3>John Doe</h3>
+              <p>CEO & Founder</p>
+          </div>
+          <div class="team-member">
+              <img src="https://via.placeholder.com/150" alt="Person 1">
+              <h3>John Doe</h3>
+              <p>CEO & Founder</p>
+          </div>
+      </div>
+      
+    </section>
+    <section id="contact" class="contact-section">
+      <div class="footer1">
+        <div class="contact-container">
+          <h2>Contact Us</h2>
+          <p>If you have any questions or inquiries, feel free to send us a message.</p>
+          
+          <!-- Contact Form -->
+          <form action="https://formspree.io/f/sudarshanjundre@gmail.com" method="POST" class="contact-form">
+              <div class="form-group">
+                  <label for="name">Full Name</label>
+                  <input type="text" id="name" name="name" required placeholder="Enter your name">
+              </div>
+              
+              <div class="form-group">
+                  <label for="email">Email Address</label>
+                  <input type="email" id="email" name="email" required placeholder="Enter your email">
+              </div>
+              
+              <div class="form-group">
+                  <label for="message">Your Message</label>
+                  <textarea id="message" name="message" rows="4" required placeholder="Write your message here"></textarea>
+              </div>
+              
+              <button type="submit" class="submit-button">Send Message</button>
+          </form>
+      </div>
+      <div class="map-container">
+        <h3>Find Us Here</h3>
+        <!-- Replace the src URL with your desired location -->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.9231840726557!2d90.39125511490773!3d23.810291684585356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c72db29fcd09%3A0x405d60fecc5ff4a4!2sDhaka%2C%20Bangladesh!5e0!3m2!1sen!2sus!4v1674795184908!5m2!1sen!2sus" 
+                width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+      </div>
+  </section>
+  
+
+    <footer>
+        <p>&copy; 2025 Robotics Lab. All rights reserved.</p>
+    </footer>
+    
+</body>
+</html>
